@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../image.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.app {
+  height: 100vh;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.app .pads {
+  background: lightblue;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  border: 5px solid #fff;
+  opacity: 0.9;
+}
+
+.app .pads > div {
+  height: 100%;
+  width: 100%;
+}
+
+.app .pad1 {
+  background: #ffbe76;
+  padding: 40px;
+}
+
+.app .pad2 {
+  background: #ff7979;
+  padding: 40px;
+}
+
+.app .pad3 {
+  background: #badc58;
+  padding: 40px;
+}
+
+.app .pad4 {
+  background: #686de0;
+  padding: 40px;
+}
+
+.app .pad5 {
+  background: #e056fd;
+  padding: 40px;
+}
+
+.app .pad6 {
+  background: #22a6b3;
+  padding: 40px;
+}
+
+.app .visuals > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px 50%;
+  z-index: -1;
+  top: 37%;
+  left: 45%;
+}
+
+header h1,
+header p {
+  text-align: center;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 37%;
+    left: 45%;
+  }
+  25% {
+    left: 85%;
+  }
+  50% {
+    top: 90%;
+  }
+  75% {
+    left: 25%;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    left: 45%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 37%;
+    left: 45%;
+  }
+  25% {
+    left: 85%;
+  }
+  50% {
+    top: 90%;
+  }
+  75% {
+    left: 25%;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .app .pads {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
